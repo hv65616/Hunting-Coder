@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -41,49 +42,29 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a
-            href="/"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
+          <Link href="/">
+            <h2 className={styles.card}>
               Home <span>-&gt;</span>
             </h2>
-          </a>
+          </Link>
 
-          <a
-            href="/"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
+          <Link href="/about">
+            <h2 className={styles.card}>
               About <span>-&gt;</span>
             </h2>
-          </a>
+          </Link>
 
-          <a
-            href="/"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
+          <Link href="/blogs">
+            <h2 className={styles.card}>
               Blogs <span>-&gt;</span>
             </h2>
-          </a>
+          </Link>
 
-          <a
-            href="/"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
+          <Link href="/contact">
+            <h2 className={styles.card}>
               Contact <span>-&gt;</span>
             </h2>
-          </a>
+          </Link>
         </div>
       </main>
     </>
