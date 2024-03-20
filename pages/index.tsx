@@ -16,13 +16,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>A blog by a Programmer for a Programmer</p>
-          <div>
-            <p>By - Himanshu Verma </p>
-          </div>
-        </div>
-
         <div className={styles.center}>
           {/* <Image
             className={styles.logo}
@@ -34,37 +27,8 @@ export default function Home() {
           /> */}
           <h1 className={styles.mainname}>Hunting Coder&apos;s</h1>
         </div>
-
-        <div className={styles.center2}>
-          <h3 className={styles.subheading}>
-            Our Life Stuck To Eat | Sleep | Code and Repeat
-          </h3>
-        </div>
-
-        <div className={styles.grid}>
-          <Link href="/">
-            <h2 className={styles.card}>
-              Home <span>-&gt;</span>
-            </h2>
-          </Link>
-
-          <Link href="/about">
-            <h2 className={styles.card}>
-              About <span>-&gt;</span>
-            </h2>
-          </Link>
-
-          <Link href="/blogs">
-            <h2 className={styles.card}>
-              Blogs <span>-&gt;</span>
-            </h2>
-          </Link>
-
-          <Link href="/contact">
-            <h2 className={styles.card}>
-              Contact <span>-&gt;</span>
-            </h2>
-          </Link>
+        <div className={styles.description}>
+          <p>A blog by a Programmer for a Programmer</p>
         </div>
       </main>
     </>
