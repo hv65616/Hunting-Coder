@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import styles from "../styles/Blog.module.css";
+import Link from "next/link";
 const blogs = () => {
   return (
     <>
@@ -9,7 +11,43 @@ const blogs = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>blogs</div>
+      <main className={styles.main}>
+        <div className="blogItem">
+          <Link href={"/blogpost/Blog1"}>
+            <h3 className={styles.blogItemh3}>How to Learn Javascript</h3>
+          </Link>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            aperiam itaque doloremque praesentium. Sint repellendus ex explicabo
+            aliquam illum maiores magnam veniam perspiciatis obcaecati corporis
+            facere assumenda, quos totam cumque.
+          </p>
+        </div>
+
+        <div className="blogItem">
+          <Link href={"/blogpost/Blog2"}>
+            <h3>How to Learn Javascript</h3>
+          </Link>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            aperiam itaque doloremque praesentium. Sint repellendus ex explicabo
+            aliquam illum maiores magnam veniam perspiciatis obcaecati corporis
+            facere assumenda, quos totam cumque.
+          </p>
+        </div>
+
+        <div className="blogItem">
+          <Link href={"/blogpost/Blog3"}>
+            <h3>How to Learn Javascript</h3>
+          </Link>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            aperiam itaque doloremque praesentium. Sint repellendus ex explicabo
+            aliquam illum maiores magnam veniam perspiciatis obcaecati corporis
+            facere assumenda, quos totam cumque.
+          </p>
+        </div>
+      </main>
     </>
   );
 };
