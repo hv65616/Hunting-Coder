@@ -14,13 +14,16 @@ const blogs = () => {
       <main className={styles.main}>
         <div className="blogItem">
           <Link href={"/blogpost/Blog1"}>
-            <h3 className={styles.blogItemh3}>How to Learn Javascript</h3>
+            <h3 className={styles.blogItemh3}>
+              Demystifying JavaScript: A Beginner's Guide to Understanding the
+              Basics
+            </h3>
           </Link>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            aperiam itaque doloremque praesentium. Sint repellendus ex explicabo
-            aliquam illum maiores magnam veniam perspiciatis obcaecati corporis
-            facere assumenda, quos totam cumque.
+            JavaScript is often heralded as the language of the web, but for
+            many newcomers, it can feel like diving into the deep end without
+            knowing how to swim. In this beginner's guide, we'll unravel the
+            mysteries of JavaScript, starting from the ground up.
           </p>
         </div>
 
